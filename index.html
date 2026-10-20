@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="pt-AO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Puff Produtos · Água mineral Puff 20 L e snacks em Luanda</title>
+<meta name="description" content="Água mineral Puff de origem subterrânea, em bidões de 20 litros, com controlo de qualidade. Enchimento no Rocha Pinto, lojas em Luanda e pedidos pelo WhatsApp. Quem prova se apaixona.">
+<meta name="theme-color" content="#21A8E0">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="imagens/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_AO">
+<meta property="og:title" content="Água mineral Puff · A água que já conheces">
+<meta property="og:description" content="Origem subterrânea, a 120 metros. Bidões de 20 L, enchimento e snacks Puff em Luanda. Faz o teu pedido pelo WhatsApp.">
+<meta property="og:image" content="imagens/og.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="imagens/bidoes.webp">
+<style>
+:root{
+  --azul:#21A8E0; --azul-2:#1C93C8; --azul-claro:#E8F6FC; --indigo:#3B3D90; --indigo-2:#2B2D72;
+  --amarelo:#DFCD00; --amarelo-2:#F2E318; --vermelho:#E1262F; --tinta:#1B1D4A; --cinza:#5B6178;
+  --linha:#DCE6F0; --branco:#fff; --raio:28px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:Outfit,system-ui,sans-serif;color:var(--tinta);background:#fff;line-height:1.5;-webkit-font-smoothing:antialiased}
+main{overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+.icon{width:1.2em;height:1.2em;flex-shrink:0}
+.wrap{width:min(1180px,100% - 32px);margin-inline:auto}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.eyebrow::before{content:"";width:22px;height:3px;border-radius:3px;background:currentColor}
+h1,h2,h3{font-weight:900;line-height:.98;letter-spacing:-.025em;text-transform:uppercase}
+h2{font-size:clamp(34px,6vw,64px)}
+.lead{font-size:clamp(17px,2vw,20px);font-weight:300;line-height:1.55}
+.lead b,.lead strong{font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 26px;border-radius:999px;font-weight:700;font-size:16px;transition:transform .2s,box-shadow .2s,background .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn-am{background:var(--amarelo);color:var(--indigo-2);box-shadow:0 10px 24px -10px rgba(120,110,0,.7)}
+.btn-am:hover{background:var(--amarelo-2)}
+.btn-in{background:var(--indigo);color:#fff;box-shadow:0 12px 26px -12px rgba(43,45,114,.8)}
+.btn-ln{border:2px solid rgba(255,255,255,.55);color:#fff}
+.btn-ln:hover{background:rgba(255,255,255,.12)}
+.btn-ln-in{border:2px solid var(--linha);color:var(--indigo)}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.on{opacity:1;transform:none}
+
+/* Cabeçalho */
+.top{position:sticky;top:0;z-index:50;background:rgba(33,168,224,.92);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid rgba(255,255,255,.18)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.brand img{height:50px;width:auto;filter:drop-shadow(0 4px 8px rgba(20,40,110,.25))}
+.nav{display:none;gap:4px;color:#fff;font-weight:600;font-size:15px}
+.nav a{padding:8px 14px;border-radius:999px;transition:background .2s}
+.nav a:hover{background:rgba(255,255,255,.16)}
+.top .btn{min-height:44px;padding:0 18px;font-size:15px}
+@media(min-width:900px){.nav{display:flex}}
+
+/* Hero */
+.hero{position:relative;background:var(--azul);color:#fff;padding:36px 0 150px;isolation:isolate;overflow:hidden}
+.hero::before,.hero::after{content:"";position:absolute;z-index:-1;border-radius:50%;border:2px solid rgba(255,255,255,.09)}
+.hero::before{width:900px;height:900px;left:-420px;top:-300px}
+.hero::after{width:1300px;height:1300px;right:-700px;bottom:-900px;border-width:70px;border-color:rgba(255,255,255,.05)}
+.hero .wrap{display:grid;gap:36px;align-items:center}
+.hero h1{font-size:clamp(44px,9vw,84px)}
+.hero h1 .hl{display:inline-block;font-size:.62em;background:var(--amarelo);color:var(--indigo-2);padding:2px 12px 0;margin-top:6px;transform:rotate(-1.5deg)}
+.hero .lead{margin-top:22px;max-width:520px;color:rgba(255,255,255,.92)}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:rgba(255,255,255,.14);font-size:14px;font-weight:500}
+.chip svg{color:var(--amarelo-2)}
+.hero-img{position:relative}
+.hero-img .frame{border-radius:36px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(20,40,110,.6);transform:rotate(1.2deg)}
+.hero-img .frame img{width:100%;aspect-ratio:1080/690;object-fit:cover}
+.badge-120{position:absolute;left:-10px;bottom:-34px;background:var(--indigo);color:#fff;border-radius:24px;padding:14px 20px;box-shadow:0 20px 40px -18px rgba(20,20,80,.8);display:flex;align-items:center;gap:14px;animation:bob 5s ease-in-out infinite}
+.badge-120 strong{font-size:40px;font-weight:900;line-height:1;color:var(--amarelo-2)}
+.badge-120 span{font-size:13px;line-height:1.25;opacity:.9}
+.mascote{position:absolute;right:-6px;top:-46px;width:130px;filter:drop-shadow(0 10px 18px rgba(20,40,110,.35));animation:bob 6s ease-in-out infinite reverse}
+@keyframes bob{50%{transform:translateY(-8px)}}
+@media(min-width:900px){
+  .hero{padding:70px 0 150px}
+  .hero .wrap{grid-template-columns:1.05fr 1fr;gap:56px}
+  .mascote{width:170px;top:-80px;right:-30px}
+}
+
+/* Faixa */
+.faixa{background:var(--indigo);color:#fff;overflow:hidden;white-space:nowrap;padding:16px 0;font-weight:800;text-transform:uppercase;letter-spacing:.04em;font-size:18px}
+.faixa .trilho{display:inline-flex;gap:34px;animation:corre 38s linear infinite;padding-left:34px}
+.faixa span{display:inline-flex;align-items:center;gap:34px}
+.faixa span::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--amarelo)}
+@keyframes corre{to{transform:translateX(-50%)}}
+
+/* Pedido */
+.pedido{position:relative;margin-top:-80px;z-index:5}
+.pedido+.faixa{margin-top:72px}
+.card-pedido{background:#fff;border-radius:var(--raio);box-shadow:0 30px 80px -30px rgba(27,29,74,.35);padding:26px 20px;display:grid;gap:26px}
+.card-pedido h2{font-size:clamp(30px,4.5vw,46px);color:var(--indigo)}
+.card-pedido .lead{color:var(--cinza);margin-top:10px;font-size:17px}
+.passos{display:flex;gap:6px;margin-top:22px}
+.passos i{height:6px;flex:1;border-radius:6px;background:var(--linha);transition:background .3s}
+.passos i.on{background:var(--azul)}
+.passo{display:none}
+.passo.on{display:block;animation:entra .35s ease}
+@keyframes entra{from{opacity:0;transform:translateX(12px)}}
+.passo h3{font-size:15px;letter-spacing:.06em;color:var(--cinza);font-weight:700;margin-bottom:14px}
+.opcoes{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.op{display:flex;flex-direction:column;align-items:flex-start;gap:6px;padding:16px;border:2px solid var(--linha);border-radius:20px;text-align:left;transition:border-color .2s,background .2s,transform .2s;min-height:96px}
+.op:hover{border-color:var(--azul);transform:translateY(-2px)}
+.op.sel{border-color:var(--azul);background:var(--azul-claro)}
+.op b{font-size:16px;line-height:1.2}
+.op small{font-size:13px;color:var(--cinza);line-height:1.3}
+.op .em{font-size:22px;color:var(--azul)}
+.qtd{display:flex;flex-wrap:wrap;gap:10px}
+.qtd button{min-width:64px;height:56px;padding:0 16px;border:2px solid var(--linha);border-radius:16px;font-weight:700;font-size:18px;transition:all .2s}
+.qtd button.sel,.qtd button:hover{border-color:var(--azul);background:var(--azul-claro)}
+.campos{display:grid;gap:12px}
+.campos label{display:grid;gap:6px;font-size:14px;font-weight:600;color:var(--cinza)}
+.campos input{height:56px;border:2px solid var(--linha);border-radius:16px;padding:0 16px;font:inherit;font-size:17px;color:var(--tinta);outline:none;transition:border-color .2s}
+.campos input:focus{border-color:var(--azul)}
+.acoes{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:20px}
+.voltar{color:var(--cinza);font-weight:600;padding:10px 4px}
+.resumo{margin-top:16px;padding:14px 16px;border-radius:16px;background:var(--azul-claro);font-size:14px;color:var(--indigo)}
+@media(min-width:900px){.card-pedido{grid-template-columns:.85fr 1.15fr;padding:44px;gap:48px}.opcoes{grid-template-columns:1fr 1fr}}
+
+/* Secções */
+section{scroll-margin-top:80px}
+.sec{padding:96px 0}
+.sec-head{max-width:720px}
+.sec-head .lead{margin-top:18px;color:var(--cinza)}
+.c-azul{color:var(--azul)}
+.c-indigo{color:var(--indigo)}
+
+/* Origem */
+.origem-img{position:relative;margin-top:44px;border-radius:var(--raio);overflow:hidden}
+.origem-img img{width:100%;aspect-ratio:1080/690;object-fit:cover}
+.prof{position:absolute;right:14px;top:14px;bottom:14px;width:64px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;color:#fff;font-weight:800;font-size:13px;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.prof::before{content:"";position:absolute;right:30px;top:10px;bottom:10px;width:2px;background:repeating-linear-gradient(to bottom,#fff 0 6px,transparent 6px 12px);opacity:.8}
+.prof .fim{background:var(--amarelo);color:var(--indigo-2);text-shadow:none;padding:6px 10px;border-radius:999px;font-size:15px}
+.tres{display:grid;gap:16px;margin-top:20px}
+.t-card{border-radius:var(--raio);padding:28px;background:var(--azul-claro);position:relative;overflow:hidden}
+.t-card .n{font-size:56px;font-weight:900;line-height:1;color:var(--azul);letter-spacing:-.03em}
+.t-card h3{font-size:22px;margin-top:12px;color:var(--indigo)}
+.t-card p{margin-top:8px;color:var(--cinza)}
+.t-card.gota{background:var(--azul);color:#fff;padding-right:120px}
+.t-card.gota h3,.t-card.gota .n{color:#fff}
+.t-card.gota p{color:rgba(255,255,255,.88)}
+.t-card.gota img{position:absolute;right:-28px;bottom:-34px;width:150px;border-radius:50%;mix-blend-mode:screen}
+@media(min-width:900px){.origem-img img{aspect-ratio:16/7}.tres{grid-template-columns:repeat(3,1fr)}}
+
+/* Qualidade */
+.qual{background:var(--indigo);color:#fff;border-radius:40px;overflow:hidden;display:grid}
+.qual img{width:100%;height:100%;object-fit:cover;aspect-ratio:1080/868}
+.qual .txt{padding:40px 24px}
+.qual h2{color:#fff}
+.qual .lead{color:rgba(255,255,255,.88);margin-top:18px}
+.lista{list-style:none;display:grid;gap:14px;margin-top:26px}
+.lista li{display:flex;gap:12px;align-items:flex-start;font-size:17px}
+.lista svg{color:var(--amarelo-2);margin-top:3px}
+@media(min-width:900px){.qual{grid-template-columns:1fr 1fr}.qual .txt{padding:64px 56px;align-self:center}}
+
+/* Rotina */
+.rotina{display:grid;gap:14px;margin-top:40px}
+.r-card{border:2px solid var(--linha);border-radius:var(--raio);padding:28px;display:flex;flex-direction:column;gap:10px;transition:border-color .2s,transform .2s}
+.r-card:hover{border-color:var(--azul);transform:translateY(-4px)}
+.r-card .ic{width:52px;height:52px;border-radius:16px;background:var(--azul-claro);color:var(--azul);display:grid;place-items:center}
+.r-card .ic svg{width:26px;height:26px}
+.r-card h3{font-size:24px;color:var(--indigo)}
+.r-card p{color:var(--cinza)}
+.r-card a{margin-top:auto;padding-top:8px;font-weight:700;color:var(--azul);display:inline-flex;gap:6px;align-items:center}
+@media(min-width:900px){.rotina{grid-template-columns:repeat(3,1fr)}}
+
+/* Enchimento */
+.encher{background:var(--azul);color:#fff;border-radius:40px;padding:44px 24px;display:grid;gap:28px;align-items:center;position:relative;overflow:hidden}
+.encher .pin{width:92px;height:92px;border-radius:50%;background:#fff;display:grid;place-items:center;color:var(--vermelho);box-shadow:0 20px 40px -20px rgba(20,40,110,.6)}
+.encher .pin svg{width:46px;height:46px}
+.encher h2{font-size:clamp(32px,5vw,56px)}
+.encher h2 .hl{color:var(--amarelo-2)}
+.encher .lead{margin-top:14px;color:rgba(255,255,255,.92)}
+.encher .num{position:absolute;right:-20px;top:-40px;font-size:240px;font-weight:900;color:rgba(255,255,255,.07);line-height:1;pointer-events:none}
+@media(min-width:900px){.encher{grid-template-columns:auto 1fr auto;padding:56px 64px;gap:40px}}
+
+/* Produtos */
+.prod{display:grid;gap:16px;margin-top:44px}
+.p-card{border-radius:var(--raio);overflow:hidden;position:relative;background:var(--azul)}
+.p-card img{width:100%;height:100%;object-fit:cover}
+.p-card .tag{position:absolute;left:16px;top:16px;background:#fff;color:var(--indigo);font-weight:800;border-radius:999px;padding:8px 14px;font-size:14px}
+.marcas{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.marcas span{padding:10px 18px;border-radius:999px;background:var(--azul-claro);color:var(--indigo);font-weight:700}
+@media(min-width:900px){.prod{grid-template-columns:1.25fr 1fr}.p-card.snk img{aspect-ratio:1080/815}}
+
+/* Lojas */
+.lojas-bg{background:var(--azul-claro)}
+.lojas{display:grid;gap:14px;margin-top:40px}
+.loja{background:#fff;border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:8px;box-shadow:0 16px 40px -28px rgba(27,29,74,.4)}
+.loja .zona{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--azul)}
+.loja h3{font-size:26px;color:var(--indigo)}
+.loja p{color:var(--cinza);font-size:15px}
+.loja .tg{align-self:flex-start;background:var(--amarelo);color:var(--indigo-2);font-weight:700;font-size:13px;border-radius:999px;padding:5px 12px}
+.loja a{margin-top:auto;padding-top:10px;font-weight:700;color:var(--indigo);display:inline-flex;align-items:center;gap:8px}
+.loja a svg{color:var(--vermelho)}
+.loja.parceiro{background:var(--indigo);color:#fff}
+.loja.parceiro h3,.loja.parceiro a{color:#fff}
+.loja.parceiro p{color:rgba(255,255,255,.85)}
+.loja.parceiro .zona{color:var(--amarelo-2)}
+@media(min-width:700px){.lojas{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1000px){.lojas{grid-template-columns:repeat(3,1fr)}}
+
+/* FAQ */
+.faq{max-width:820px;margin:40px auto 0;display:grid;gap:12px}
+.faq details{border:2px solid var(--linha);border-radius:22px;padding:4px 22px;transition:border-color .2s}
+.faq details[open]{border-color:var(--azul)}
+.faq summary{list-style:none;cursor:pointer;padding:18px 0;font-weight:700;font-size:18px;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:28px;font-weight:400;color:var(--azul);transition:transform .25s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq p{padding:0 0 20px;color:var(--cinza)}
+
+/* Final */
+.final{background:var(--indigo);color:#fff;text-align:center;padding:96px 0 120px;position:relative;overflow:hidden}
+.final img.m{width:220px;margin:0 auto 26px;filter:drop-shadow(0 18px 30px rgba(0,0,0,.35))}
+.final h2{color:#fff}
+.final h2 .hl{color:var(--amarelo-2)}
+.final .lead{color:rgba(255,255,255,.85);margin:16px auto 0;max-width:560px}
+.final .ctas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
+footer{background:var(--indigo-2);color:rgba(255,255,255,.8);padding:48px 0 120px;font-size:15px}
+footer .wrap{display:grid;gap:28px}
+footer h4{color:#fff;font-size:14px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
+footer a{display:inline-flex;align-items:center;gap:10px;padding:4px 0}
+footer a:hover{color:#fff}
+footer .base{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;font-size:13px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+@media(min-width:900px){footer .wrap{grid-template-columns:1.4fr 1fr 1fr}footer .base{grid-column:1/-1}footer{padding-bottom:48px}}
+
+/* Barra fixa no telemóvel */
+.barra{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:60;display:grid;grid-template-columns:auto 1fr;gap:8px;padding:8px;border-radius:999px;background:rgba(43,45,114,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 20px 40px -14px rgba(0,0,40,.6);transform:translateY(140%);transition:transform .4s ease}
+.barra.on{transform:none}
+.barra a{min-height:50px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:700}
+.barra .tel{width:50px;background:rgba(255,255,255,.12);color:#fff}
+.barra .wa{background:var(--amarelo);color:var(--indigo-2)}
+@media(min-width:900px){.barra{display:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7.5 7.5 0 0 0-7.5 7.5c0 5.6 7.5 12.5 7.5 12.5s7.5-6.9 7.5-12.5A7.5 7.5 0 0 0 12 2zm0 10.4a2.9 2.9 0 1 1 0-5.8 2.9 2.9 0 0 1 0 5.8z"/></symbol>
+  <symbol id="i-ok" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-seta" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M14 8V6.3c0-.8.2-1.3 1.4-1.3H17V2.1A21 21 0 0 0 14.6 2C12.2 2 10.6 3.4 10.6 6v2H8v3.2h2.6V22H14V11.2h2.7L17 8z"/></symbol>
+  <symbol id="i-casa" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 10.5 12 3l9 7.5V21h-6v-6H9v6H3z"/></symbol>
+  <symbol id="i-escr" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></g></symbol>
+  <symbol id="i-loja" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 9h16l-1.5-5h-13zM5 9v11h14V9M9 20v-6h6v6"/></g></symbol>
+  <symbol id="i-gota" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5S5 10 5 14.5a7 7 0 0 0 14 0C19 10 12 2.5 12 2.5z"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a href="#" class="brand" aria-label="Puff Alimentos — início"><img src="imagens/logo.webp" alt="Puff Alimentos" width="66" height="50"></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#origem">A água</a>
+      <a href="#qualidade">Qualidade</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#lojas">Lojas</a>
+      <a href="#perguntas">Perguntas</a>
+    </nav>
+    <a class="btn btn-am" href="#pedido"><svg class="icon"><use href="#i-wa"/></svg>Fazer pedido</a>
+  </div>
+</header>
+
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Água mineral · Bidão de 20 litros</p>
+        <h1 style="margin-top:18px">A água que<br>já conheces.<br><span class="hl">Agora mais perto.</span></h1>
+        <p class="lead">Origem <b>subterrânea</b>, a <b>120 metros de profundidade</b>, com <b>controlo de qualidade</b> até chegar ao teu bidão. Pede em 3 toques pelo WhatsApp.</p>
+        <div class="ctas">
+          <a class="btn btn-am" href="#pedido"><svg class="icon"><use href="#i-wa"/></svg>Fazer o meu pedido</a>
+          <a class="btn btn-ln" href="#lojas"><svg class="icon"><use href="#i-pin"/></svg>Ver lojas</a>
+        </div>
+        <div class="chips">
+          <span class="chip"><svg class="icon"><use href="#i-ok"/></svg>Origem subterrânea</span>
+          <span class="chip"><svg class="icon"><use href="#i-ok"/></svg>Sais minerais</span>
+          <span class="chip"><svg class="icon"><use href="#i-ok"/></svg>Indústria angolana</span>
+        </div>
+      </div>
+      <div class="hero-img">
+        <div class="frame"><img src="imagens/bidoes.webp" alt="Bidões de 20 litros de água mineral Puff" width="1080" height="690" fetchpriority="high"></div>
+        <img class="mascote" src="imagens/logo.webp" alt="" width="170" height="128" aria-hidden="true">
+        <div class="badge-120"><strong>120 m</strong><span>de profundidade:<br>é daí que vem a tua água</span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Pedido em 3 toques -->
+  <section class="pedido" id="pedido">
+    <div class="wrap">
+      <div class="card-pedido reveal">
+        <div>
+          <p class="eyebrow c-azul">Pedido rápido</p>
+          <h2 style="margin-top:14px">Faz o teu pedido em 3 toques.</h2>
+          <p class="lead">Escolhe, diz quantos e de onde és. A mensagem segue pronta para o nosso WhatsApp e a equipa confirma contigo o preço e a disponibilidade.</p>
+          <div class="passos" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
+        </div>
+        <form id="wiz" novalidate>
+          <div class="passo on" data-p="1">
+            <h3>1 · O QUE PRECISAS?</h3>
+            <div class="opcoes" role="radiogroup">
+              <button type="button" class="op" data-v="Bidão de água mineral Puff 20 L"><svg class="icon em"><use href="#i-gota"/></svg><b>Bidão 20 L</b><small>Água mineral Puff</small></button>
+              <button type="button" class="op" data-v="Enchimento do meu bidão"><svg class="icon em"><use href="#i-pin"/></svg><b>Encher o meu bidão</b><small>Rocha Pinto</small></button>
+              <button type="button" class="op" data-v="Salgadinhos e papas Puff"><svg class="icon em"><use href="#i-loja"/></svg><b>Snacks e papas</b><small>Puff Teen, Cancan, Matete</small></button>
+              <button type="button" class="op" data-v="Fornecimento para empresa / revenda"><svg class="icon em"><use href="#i-escr"/></svg><b>Empresa ou revenda</b><small>Escritórios e negócios</small></button>
+            </div>
+          </div>
+          <div class="passo" data-p="2">
+            <h3>2 · QUANTOS?</h3>
+            <div class="qtd" role="radiogroup">
+              <button type="button" data-q="1">1</button><button type="button" data-q="2">2</button><button type="button" data-q="3">3</button><button type="button" data-q="5">5</button><button type="button" data-q="10">10</button><button type="button" data-q="Mais de 10">10+</button>
+            </div>
+            <div class="acoes"><button type="button" class="voltar" data-back>← Voltar</button></div>
+          </div>
+          <div class="passo" data-p="3">
+            <h3>3 · OS TEUS DADOS</h3>
+            <div class="campos">
+              <label>O teu nome<input id="nome" autocomplete="name" placeholder="Ex.: Ana Domingos"></label>
+              <label>Bairro / zona em Luanda<input id="zona" autocomplete="address-level2" placeholder="Ex.: Maianga, Benfica, Patriota…"></label>
+            </div>
+            <div class="resumo" id="resumo"></div>
+            <div class="acoes">
+              <button type="button" class="voltar" data-back>← Voltar</button>
+              <button type="submit" class="btn btn-in"><svg class="icon"><use href="#i-wa"/></svg>Enviar no WhatsApp</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="faixa" aria-hidden="true">
+    <div class="trilho">
+      <span>Quem prova se apaixona</span><span>Água mineral Puff</span><span>Bidões de 20 L</span><span>Enchimento no Rocha Pinto</span><span>Puff Teen</span><span>Cancan</span><span>Papa Matete</span>
+      <span>Quem prova se apaixona</span><span>Água mineral Puff</span><span>Bidões de 20 L</span><span>Enchimento no Rocha Pinto</span><span>Puff Teen</span><span>Cancan</span><span>Papa Matete</span>
+    </div>
+  </div>
+
+  <!-- Origem -->
+  <section class="sec" id="origem">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow c-azul">A origem</p>
+        <h2 class="c-indigo" style="margin-top:14px">Tudo começa<br>no subsolo.</h2>
+        <p class="lead">A <b>água mineral Puff</b> tem origem no <b>lençol freático, a 120 metros de profundidade</b>. Protegida pelas camadas da terra, chega até ti com os sais minerais que fazem parte da sua composição.</p>
+      </div>
+      <div class="origem-img reveal">
+        <img src="imagens/subsolo.webp" alt="Camadas do subsolo até ao lençol freático de onde vem a água Puff" width="1080" height="690" loading="lazy">
+        <div class="prof" aria-hidden="true"><span>0 m</span><span>60 m</span><span class="fim">120 m</span></div>
+      </div>
+      <div class="tres">
+        <div class="t-card reveal"><div class="n">120 m</div><h3>Origem subterrânea</h3><p>Extraída do lençol freático, longe da superfície.</p></div>
+        <div class="t-card gota reveal"><img src="imagens/gota.webp" alt="" width="190" height="200" loading="lazy" aria-hidden="true"><div class="n">Sais</div><h3>Minerais naturais</h3><p>A composição mineral é parte do que faz da Puff uma água mineral.</p></div>
+        <div class="t-card reveal"><div class="n">20 L</div><h3>Para a tua rotina</h3><p>Em casa, no escritório ou no teu negócio, sempre por perto.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qualidade -->
+  <section id="qualidade">
+    <div class="wrap">
+      <div class="qual reveal">
+        <img src="imagens/laboratorio.webp" alt="Técnica de laboratório a analisar uma amostra de água ao lado de um bidão Puff" width="1080" height="868" loading="lazy">
+        <div class="txt">
+          <p class="eyebrow" style="color:var(--amarelo-2)">Qualidade</p>
+          <h2 style="margin-top:14px">Um processo acompanhado.</h2>
+          <p class="lead">Da origem ao teu bidão, a Puff acompanha cada etapa com <b>controlo de qualidade</b>.</p>
+          <ul class="lista">
+            <li><svg class="icon"><use href="#i-ok"/></svg>Água extraída de furo, a 120 m</li>
+            <li><svg class="icon"><use href="#i-ok"/></svg>Análises em laboratório</li>
+            <li><svg class="icon"><use href="#i-ok"/></svg>Composição química no rótulo de cada bidão</li>
+            <li><svg class="icon"><use href="#i-ok"/></svg>Produzida e engarrafada em Angola</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Para a tua rotina -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow c-azul">20 litros</p>
+        <h2 class="c-indigo" style="margin-top:14px">Para a tua rotina.</h2>
+        <p class="lead">Mantém a água mineral Puff por perto, onde quer que estejas.</p>
+      </div>
+      <div class="rotina">
+        <div class="r-card reveal"><div class="ic"><svg><use href="#i-casa"/></svg></div><h3>Em casa</h3><p>Para beber, cozinhar e preparar a papa dos mais pequenos.</p><a href="#pedido" data-pre="0">Pedir para casa <svg class="icon"><use href="#i-seta"/></svg></a></div>
+        <div class="r-card reveal"><div class="ic"><svg><use href="#i-escr"/></svg></div><h3>No escritório</h3><p>Bidões de 20 L para a equipa e para quem te visita.</p><a href="#pedido" data-pre="3">Pedir para a empresa <svg class="icon"><use href="#i-seta"/></svg></a></div>
+        <div class="r-card reveal"><div class="ic"><svg><use href="#i-loja"/></svg></div><h3>No teu negócio</h3><p>Tens loja, cantina ou restaurante? Fala connosco sobre revenda.</p><a href="#pedido" data-pre="3">Quero revender <svg class="icon"><use href="#i-seta"/></svg></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enchimento -->
+  <section>
+    <div class="wrap">
+      <div class="encher reveal">
+        <span class="num" aria-hidden="true">01</span>
+        <div class="pin"><svg><use href="#i-pin"/></svg></div>
+        <div>
+          <p class="eyebrow">Encher</p>
+          <h2 style="margin-top:12px">Traz o teu bidão.<br><span class="hl">Disponível no Rocha Pinto.</span></h2>
+          <p class="lead">Já tens bidão? Enche-o com água mineral Puff na nossa loja do Rocha Pinto.</p>
+        </div>
+        <a class="btn btn-am" href="https://www.google.com/maps/search/?api=1&query=Puff+Produtos+Rocha+Pinto+Luanda" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg>Como chegar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <section class="sec" id="produtos">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow c-azul">Água e muito mais</p>
+        <h2 class="c-indigo" style="margin-top:14px">E há mais<br>para saborear.</h2>
+        <p class="lead">Salgadinhos, papas e muito mais nas lojas Puff. <b>Quem prova se apaixona.</b></p>
+      </div>
+      <div class="prod">
+        <div class="p-card snk reveal"><img src="imagens/snacks.webp" alt="Salgadinhos Puff Teen e papa Puff Matete" width="1080" height="815" loading="lazy"><span class="tag">Puff Teen · Papa Matete</span></div>
+        <div class="p-card reveal"><img src="imagens/cancan.webp" alt="Salgadinhos Cancaio Tradicional e Cancan" width="1000" height="1000" loading="lazy"><span class="tag">Crocante e delicioso</span></div>
+      </div>
+      <div class="marcas reveal">
+        <span>Puff Teen</span><span>Puff Kids</span><span>Docinho</span><span>Cancan</span><span>Cancaio Tradicional</span><span>Papa Matete</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lojas -->
+  <section class="sec lojas-bg" id="lojas">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow c-azul">Onde encontrar</p>
+        <h2 class="c-indigo" style="margin-top:14px">Visita uma loja Puff.</h2>
+        <p class="lead">Entra pela água, descobre muito mais.</p>
+      </div>
+      <div class="lojas">
+        <div class="loja reveal"><span class="zona">Rocha Pinto</span><h3>Loja Rocha Pinto</h3><span class="tg">Enchimento de bidões</span><p>Água mineral Puff, enchimento e produtos Puff.</p><a href="https://www.google.com/maps/search/?api=1&query=Puff+Produtos+Rocha+Pinto+Luanda" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg>Abrir no mapa</a></div>
+        <div class="loja reveal"><span class="zona">Maianga</span><h3>Rocha Padaria</h3><p>Maianga, Luanda.</p><a href="https://www.google.com/maps/search/?api=1&query=Rocha+Padaria+Maianga+Luanda" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg>Abrir no mapa</a></div>
+        <div class="loja reveal"><span class="zona">Benfica</span><h3>Loja Benfica</h3><p>No Benfica, há muito mais para descobrir.</p><a href="https://www.google.com/maps/search/?api=1&query=Puff+Produtos+Benfica+Luanda" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg>Abrir no mapa</a></div>
+        <div class="loja reveal"><span class="zona">Patriota</span><h3>Loja Patriota</h3><p>Patriota, já conheces a nossa loja?</p><a href="https://www.google.com/maps/search/?api=1&query=Puff+Produtos+Patriota+Luanda" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg>Abrir no mapa</a></div>
+        <div class="loja parceiro reveal"><span class="zona">Também em</span><h3>Alimenta Angola</h3><p>A água mineral Puff também está no Alimenta Angola: Camama e Zango.</p><a href="https://www.google.com/maps/search/?api=1&query=Alimenta+Angola+Camama" target="_blank" rel="noopener"><svg class="icon"><use href="#i-pin"/></svg>Abrir no mapa</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Perguntas -->
+  <section class="sec" id="perguntas">
+    <div class="wrap">
+      <div class="sec-head reveal" style="margin-inline:auto;text-align:center">
+        <p class="eyebrow c-azul">Perguntas frequentes</p>
+        <h2 class="c-indigo" style="margin-top:14px">Tudo claro.</h2>
+      </div>
+      <div class="faq">
+        <details class="reveal"><summary>Como faço um pedido?</summary><p>Usa o pedido rápido no topo desta página: escolhes o produto, a quantidade e a tua zona, e a mensagem segue pronta para o nosso WhatsApp. Também podes ligar para o +244 959 103 750.</p></details>
+        <details class="reveal"><summary>Posso encher o meu próprio bidão?</summary><p>Sim. Traz o teu bidão à loja do Rocha Pinto, onde fazemos o enchimento com água mineral Puff.</p></details>
+        <details class="reveal"><summary>De onde vem a água Puff?</summary><p>Do subsolo: tem origem no lençol freático a 120 metros de profundidade e passa por um processo acompanhado com controlo de qualidade.</p></details>
+        <details class="reveal"><summary>Fornecem empresas e revendedores?</summary><p>Sim. Escolhe “Empresa ou revenda” no pedido rápido e diz-nos a quantidade aproximada. A equipa entra em contacto contigo.</p></details>
+        <details class="reveal"><summary>Onde encontro os snacks Puff?</summary><p>Nas lojas Puff: Puff Teen, Puff Kids, Docinho, Cancan, Cancaio Tradicional e a papa Matete.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final -->
+  <section class="final">
+    <div class="wrap">
+      <img class="m reveal" src="imagens/logo.webp" alt="" width="220" height="165" loading="lazy" aria-hidden="true">
+      <h2 class="reveal">Água e<br><span class="hl">muito mais.</span></h2>
+      <p class="lead reveal">Faz o teu pedido agora ou visita uma loja Puff.</p>
+      <div class="ctas reveal">
+        <a class="btn btn-am" href="#pedido"><svg class="icon"><use href="#i-wa"/></svg>Fazer pedido</a>
+        <a class="btn btn-ln" href="tel:+244959103750"><svg class="icon"><use href="#i-tel"/></svg>959 103 750</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <img src="imagens/logo.webp" alt="Puff Alimentos" width="120" height="90" loading="lazy" style="width:120px">
+      <p style="margin-top:14px;max-width:340px">Qualidade e excelência em alimentos. Quem prova se apaixona.</p>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <a href="tel:+244959103750"><svg class="icon"><use href="#i-tel"/></svg>+244 959 103 750</a><br>
+      <a href="https://wa.me/244959103750" target="_blank" rel="noopener"><svg class="icon"><use href="#i-wa"/></svg>WhatsApp</a><br>
+      <a href="#lojas"><svg class="icon"><use href="#i-pin"/></svg>Luanda, Angola</a>
+    </div>
+    <div>
+      <h4>Redes</h4>
+      <a href="https://www.instagram.com/puff.produtos/" target="_blank" rel="noopener"><svg class="icon"><use href="#i-ig"/></svg>@puff.produtos</a><br>
+      <a href="https://www.facebook.com/Puffprodutos" target="_blank" rel="noopener"><svg class="icon"><use href="#i-fb"/></svg>Puffprodutos</a>
+    </div>
+    <div class="base"><span>© <span id="ano">2026</span> Puff Produtos. Todos os direitos reservados.</span><span>Luanda · Angola</span></div>
+  </div>
+</footer>
+
+<nav class="barra" id="barra" aria-label="Contacto rápido">
+  <a class="tel" href="tel:+244959103750" aria-label="Ligar"><svg class="icon"><use href="#i-tel"/></svg></a>
+  <a class="wa" href="#pedido"><svg class="icon"><use href="#i-wa"/></svg>Fazer pedido</a>
+</nav>
+
+<script>
+(function(){
+  var WA = "244959103750"; // número do WhatsApp (sem + nem espaços)
+  document.getElementById("ano").textContent = new Date().getFullYear();
+
+  // Aparecer ao rolar
+  var io = "IntersectionObserver" in window ? new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("on"); io.unobserve(e.target); } });
+  },{rootMargin:"0px 0px -8% 0px"}) : null;
+  document.querySelectorAll(".reveal").forEach(function(el){ io ? io.observe(el) : el.classList.add("on"); });
+
+  // Barra fixa no telemóvel depois do topo
+  var barra = document.getElementById("barra");
+  addEventListener("scroll", function(){ barra.classList.toggle("on", scrollY > 520); }, {passive:true});
+
+  // Pedido em 3 toques
+  var st = {o:"", q:""}, passo = 1;
+  var passos = document.querySelectorAll(".passo"), barras = document.querySelectorAll(".passos i");
+  function ir(n){
+    passo = n;
+    passos.forEach(function(p){ p.classList.toggle("on", +p.dataset.p === n); });
+    barras.forEach(function(b,i){ b.classList.toggle("on", i < n); });
+    if(n === 3){ document.getElementById("resumo").textContent = st.q + " × " + st.o; }
+  }
+  function escolher(btn){
+    document.querySelectorAll(".op").forEach(function(b){ b.classList.remove("sel"); b.setAttribute("aria-checked","false"); });
+    btn.classList.add("sel"); btn.setAttribute("aria-checked","true");
+    st.o = btn.dataset.v; setTimeout(function(){ ir(2); }, 180);
+  }
+  document.querySelectorAll(".op").forEach(function(b){ b.addEventListener("click", function(){ escolher(b); }); });
+  document.querySelectorAll(".qtd button").forEach(function(b){
+    b.addEventListener("click", function(){
+      document.querySelectorAll(".qtd button").forEach(function(x){ x.classList.remove("sel"); });
+      b.classList.add("sel"); st.q = b.dataset.q; setTimeout(function(){ ir(3); document.getElementById("nome").focus({preventScroll:true}); }, 180);
+    });
+  });
+  document.querySelectorAll("[data-back]").forEach(function(b){ b.addEventListener("click", function(){ ir(passo - 1); }); });
+  // Atalhos das secções que pré-escolhem o produto
+  document.querySelectorAll("[data-pre]").forEach(function(a){
+    a.addEventListener("click", function(){ escolher(document.querySelectorAll(".op")[+a.dataset.pre]); });
+  });
+  document.getElementById("wiz").addEventListener("submit", function(e){
+    e.preventDefault();
+    var nome = document.getElementById("nome").value.trim(), zona = document.getElementById("zona").value.trim();
+    var quem = nome ? "Sou " + nome + (zona ? ", da zona " + zona : "") + ".\n" : (zona ? "Sou da zona " + zona + ".\n" : "\n");
+    var msg = "Olá Puff! " + quem +
+      "Quero fazer um pedido: " + st.q + " × " + st.o + ".\nPodem confirmar o preço e a disponibilidade? Obrigado!";
+    window.open("https://wa.me/" + WA + "?text=" + encodeURIComponent(msg), "_blank", "noopener");
+  });
+})();
+</script>
+</body>
+</html>
